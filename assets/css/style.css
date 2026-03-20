@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: #333;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+.container {
+  min-height: calc(100vh - 100px);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card {
+  width: 50%;
+  margin: auto;
+  min-height: 300px;
+}
+.form-header {
+  text-align: center;
+}
+
+.list-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.list-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.leads-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.leads-table th {
+    background-color: #f4f7f6;
+    color: #555;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.leads-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+    vertical-align: middle;
+}
+
+.leads-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.btn-secondary {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #357abd;
+}
+
+.ftd-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ftd-yes {
+    background-color: #e6fffa;
+    color: #38a169;
+}
+
+.ftd-no {
+    background-color: #fff5f5;
+    color: #e53e3e;
+}
+
+@media (max-width: 600px) {
+    .leads-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .list-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
