@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    loadLeads();
-    document.getElementById('refreshList').addEventListener('click', loadLeads);
+    if (document.getElementById('leadsTableBody')) {
+        loadLeads();
+        document.getElementById('refreshList').addEventListener('click', loadLeads);
+    }
 });
