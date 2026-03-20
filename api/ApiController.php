@@ -21,7 +21,7 @@ class ApiController
       "countryCode" => "GB",
       "box_id"      => $this->config['box_id'],
       "offer_id"    => $this->config['offer_id'],
-      "password"    => "",
+      "password"    => "qwerty12",
       "language"    => "en",
       "ip"          => $_SERVER['REMOTE_ADDR'] === '::1' ? '1.1.1.1' : $_SERVER['REMOTE_ADDR'],
       "landingUrl"  => (isset($_SERVER['HTTPS']) ? "https" : "http") . "://" . $_SERVER['HTTP_HOST']
