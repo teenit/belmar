@@ -3,7 +3,7 @@ require_once './ApiController.php';
 $config = require_once '../config/config.php'; 
 $input = file_get_contents('php://input');
 $data = json_decode($input, true) ?? $_POST;
-
+//test
 $action = $data['action'] ?? null;
 
 if (!$action) {
